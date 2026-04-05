@@ -12,7 +12,7 @@ export default function Home() {
       <TechStack/>
       <ProcessStepper/>
       <Projects/>
-      <Contact/>
+      
     </main>
   );
 }
