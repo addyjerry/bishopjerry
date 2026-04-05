@@ -2,16 +2,22 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { DiPhotoshop } from "react-icons/di";
+import { FaFigma, FaGitAlt, FaGithub, FaNode, FaReact } from "react-icons/fa";
+import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiCanva, SiExpress, SiMongodb, SiNextdotjs, SiPostman, SiTypescript } from "react-icons/si";
+import { VscVscode } from "react-icons/vsc";
 
 const skills = [
-  { name: "React",       level: "Advanced",     bg: "#e8f4fd", icon: "⚛️" },
-  { name: "Next.js",     level: "Advanced",     bg: "#f0f0f0", icon: "▲"  },
-  { name: "TypeScript",  level: "Advanced",     bg: "#e8f0fb", icon: "🔷" },
-  { name: "Node.js",     level: "Intermediate", bg: "#f0fdf4", icon: "🟢" },
-  { name: "Tailwind CSS",level: "Advanced",     bg: "#f0f9ff", icon: "🌊" },
-  { name: "Figma",       level: "Intermediate", bg: "#fdf4ff", icon: "🎨" },
-  { name: "MongoDB",     level: "Intermediate", bg: "#f0fdf4", icon: "🍃" },
-  { name: "Express.js",  level: "Intermediate", bg: "#fff7ed", icon: "🔥" },
+  { name: "React",       level: "Advanced",     bg: "#e8f4fd", icon: <FaReact color="#00FFFF"/> },
+  { name: "Next.js",     level: "Advanced",     bg: "#f0f0f0", icon: <SiNextdotjs /> },
+  { name: "TypeScript",  level: "Advanced",     bg: "#e8f0fb", icon: <SiTypescript color="#3178c6"/> },
+  { name: "Node.js",     level: "Intermediate", bg: "#f0fdf4", icon: <FaNode color="#215732"/>},
+  { name: "Tailwind CSS",level: "Advanced",     bg: "#f0f9ff", icon: <RiTailwindCssFill color="#38BDF8" />},
+  { name: "Figma",       level: "Intermediate", bg: "#fdf4ff", icon: <FaFigma color="#F24E1E"/>},
+  { name: "MongoDB",     level: "Intermediate", bg: "#f0fdf4", icon: <SiMongodb color="#4DB33D"/>},
+  { name: "Express.js",  level: "Intermediate", bg: "#fff7ed", icon: <SiExpress /> },
 ];
 
 const experience = [
@@ -104,15 +110,15 @@ export default function AboutPage() {
               style={{ fontFamily: "'Syne', sans-serif", fontSize: "clamp(28px, 4vw, 44px)" }}
             >
               I&apos;m Bishop,<br />
-              a <span className="text-[#ff6b6b]">frontend</span><br />
-              developer.
+              a <span className="text-[#ff6b6b]">Software</span><br />
+              Engineer.
             </h1>
 
             <p
               className="text-[14px] text-neutral-500 dark:text-neutral-400 leading-[1.8] mb-3"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              I&apos;m a frontend developer based in Accra, Ghana, passionate about building beautiful, fast, and purposeful digital experiences. I work primarily with React, Next.js, and TypeScript — and I care deeply about clean code, great design, and products that actually solve real problems.
+              I&apos;m a Software Engineer based in Accra, Ghana, passionate about building beautiful, fast, and purposeful digital experiences. I work primarily with React, Next.js, and TypeScript — and I care deeply about clean code, great design, and products that actually solve real problems.
             </p>
 
             <p

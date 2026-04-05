@@ -20,12 +20,12 @@ const projects: Project[] = [
   {
     number: "01",
     tag: "Web App",
-    name: "Project Alpha",
+    name: "Az-Pros",
     description:
-      "A full-stack web application that helps teams manage tasks, track progress, and collaborate in real time. Designed with a focus on clean UI and seamless user experience, it features role-based access, real-time notifications, and a fully responsive dashboard.",
-    stack: ["Next.js", "TypeScript", "MongoDB", "Tailwind CSS", "Node.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A full stack web application where service providers can create profiles, list their services, and connect with potential clients. Built with Next.js, TypeScript, MongoDB, and Tailwind CSS.",
+    stack: ["Next.js", "TypeScript", "MongoDB", "Tailwind","Framer Motion","Node.js","Express"],
+    liveUrl: "https://azpros.vercel.app/",
+    githubUrl: "https://github.com/addyjerry/Az-Pros-revamp",
     placeholderBg: "#e8f4fd",
     placeholderIcon: (
       <svg
@@ -37,16 +37,17 @@ const projects: Project[] = [
         <path d="M8 21h8M12 17v4" />
       </svg>
     ),
+     image:'/images/azpros.PNG',
   },
   {
     number: "02",
-    tag: "E-Commerce",
-    name: "Project Beta",
+    tag: "Management System",
+    name:  "School Management System",
     description:
-      "A fully functional e-commerce platform built for refurbished electronics in Ghana, featuring GH₵ pricing, Paystack mobile money integration with automatic network detection for MTN, Vodafone, and AirtelTigo, plus an admin dashboard and PWA support for offline access.",
-    stack: ["Next.js", "Express", "MongoDB", "Paystack", "NextAuth"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A Saas platform for schools to manage student records, attendance, and communication. ",
+    stack: ["Next.js", "Express", "MongoDB", "Paystack"],
+    liveUrl: "https://edumanagement.vercel.app/",
+    githubUrl: "https://github.com/addyjerry/School-management-system-frontend",
     placeholderBg: "#f0fdf4",
     placeholderIcon: (
       <svg
@@ -59,16 +60,17 @@ const projects: Project[] = [
         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
       </svg>
     ),
+    image:'/images/edumanagement.PNG',
   },
   {
     number: "03",
-    tag: "Marketplace",
-    name: "Project Gamma",
+    tag: "Task Manager",
+    name: "Taskidio",
     description:
-      "A home services marketplace connecting clients with verified local service providers across Ghana. Features a multi-step booking flow, provider verification, earnings dashboard, real-time notifications, review system, and a fully animated landing page with custom scroll interactions.",
-    stack: ["Next.js", "Shadcn UI", "Framer Motion", "Tailwind CSS", "Node.js"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A task management app with features like task creation, categorisation, and progress tracking. ",
+    stack: ["Next.js","Framer Motion", "Tailwind","Node.js","Express","MongoDB"],
+    liveUrl: "https://taskidio.vercel.app/",
+    githubUrl: "https://github.com/addyjerry/taskmanager",
     placeholderBg: "#fff7ed",
     placeholderIcon: (
       <svg
@@ -80,27 +82,50 @@ const projects: Project[] = [
         <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
+    image:'/images/taskidio.PNG',
   },
-  {
+   {
     number: "04",
-    tag: "Platform",
-    name: "Project Delta",
-    description:
-      "A streaming platform built for African audiences, with user authentication, curated content categories, a responsive adaptive video player optimised for low-bandwidth connections, and a subscription model with Paystack payment integration.",
-    stack: ["React", "Node.js", "MongoDB", "Tailwind CSS", "Paystack"],
-    liveUrl: "#",
-    githubUrl: "#",
-    placeholderBg: "#fdf4ff",
+    tag: "E-commerce",
+    name: "Techlo-Electronics",
+    description: "An e-commerce platform for buying and selling electronics, featuring product listings, shopping cart, and secure checkout.",
+    stack: ["React", "Node.js", "MongoDB", "Tailwind"],
+    liveUrl: "https://techlo-electronics.vercel.app/",
+    githubUrl: "https://github.com/addyjerry/techlo-electronics",
+    placeholderBg: "#fff7ed",
     placeholderIcon: (
       <svg
         width="90" height="90" viewBox="0 0 24 24"
-        fill="none" stroke="#a855f7"
+        fill="none" stroke="#FF6C37"
         strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round"
       >
-        <polygon points="23 7 16 12 23 17 23 7" />
-        <rect x="1" y="5" width="15" height="14" rx="2" />
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
+    image:'/images/techlo.PNG',
+  },
+   {
+    number: "05",
+    tag: " Management System",
+    name: "Church Management System",
+    description:
+      "A management system for churches to handle member records, event planning, and communication.",
+    stack: ["React", "Node.js", "MongoDB", "Tailwind"],
+    liveUrl: "https://arkpalacechapel.vercel.app/",
+    githubUrl: "https://github.com/addyjerry/ark-palace-chapel",
+    placeholderBg: "#fff7ed",
+    placeholderIcon: (
+      <svg
+        width="90" height="90" viewBox="0 0 24 24"
+        fill="none" stroke="#FF6C37"
+        strokeWidth="0.8" strokeLinecap="round" strokeLinejoin="round"
+      >
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+        <polyline points="9 22 9 12 15 12 15 22" />
+      </svg>
+    ),
+    image:'/images/arkpalace.PNG',
   },
 ];
 

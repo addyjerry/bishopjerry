@@ -1,10 +1,11 @@
 "use client";
 
 import { useEffect, useRef, useState, useCallback } from "react";
+import { DiPhotoshop } from "react-icons/di";
 import { FaFigma, FaGitAlt, FaGithub, FaNode, FaReact } from "react-icons/fa";
 import { IoLogoJavascript, IoLogoVercel } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress, SiMongodb, SiNextdotjs, SiPostman, SiTypescript } from "react-icons/si";
+import { SiCanva, SiExpress, SiMongodb, SiNextdotjs, SiPostman, SiTypescript } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 const techStack = [
@@ -46,6 +47,12 @@ const tools = [
   {
     name: "VS Code",
     svg:<VscVscode color="#007ACC"/>,
+  },
+  {name: "Adobe Photoshop",
+    svg: <DiPhotoshop />,
+  },
+   {name: "Canva",
+    svg: <SiCanva color="#00C4CC"/>,
   },
   {
     name: "Figma",

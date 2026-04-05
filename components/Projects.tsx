@@ -18,13 +18,13 @@ type Project = {
 
 const projects: Project[] = [
   {
-    name: "Project Alpha",
+    name: "Az-Pros",
     tag: "Web App",
     description:
-      "A full-stack web application that helps teams manage tasks and collaborate in real time. Built with performance and scalability in mind.",
-    stack: ["Next.js", "TypeScript", "MongoDB", "Tailwind"],
-    year: "2024",
-    link: "#",
+      "A full stack web application where service providers can create profiles, list their services, and connect with potential clients. Built with Next.js, TypeScript, MongoDB, and Tailwind CSS.",
+    stack: ["Next.js", "TypeScript", "MongoDB", "Tailwind","Framer Motion","Node.js","Express"],
+    year: "2026",
+    link: "https://azpros.vercel.app/",
     placeholderBg: "#e8f4fd",
     placeholderStroke: "#378ADD",
     placeholderIcon: (
@@ -37,15 +37,16 @@ const projects: Project[] = [
         <path d="M8 21h8M12 17v4" />
       </svg>
     ),
+    image:'/images/azpros.PNG',
   },
   {
-    name: "Project Beta",
-    tag: "E-Commerce",
+    name: "School Management System",
+    tag: "Management System",
     description:
-      "An e-commerce platform for second-hand electronics with integrated mobile money payments, an admin dashboard, and PWA support.",
+      "A Saas platform for schools to manage student records, attendance, and communication. ",
     stack: ["Next.js", "Express", "MongoDB", "Paystack"],
     year: "2024",
-    link: "#",
+    link: "https://edumanagement.vercel.app/",
     placeholderBg: "#f0fdf4",
     placeholderStroke: "#4DB33D",
     placeholderIcon: (
@@ -59,15 +60,16 @@ const projects: Project[] = [
         <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
       </svg>
     ),
+    image:'/images/edumanagement.PNG',
   },
   {
-    name: "Project Gamma",
-    tag: "Marketplace",
+    name: "Taskidio",
+    tag: "Task Manager",
     description:
-      "A home services marketplace connecting clients with verified local service providers, featuring booking, reviews, and a provider dashboard.",
-    stack: ["Next.js", "Shadcn UI", "Framer Motion", "Tailwind"],
+      "A task management app with features like task creation, categorisation, and progress tracking. ",
+    stack: ["Next.js","Framer Motion", "Tailwind","Node.js","Express","MongoDB"],
     year: "2025",
-    link: "#",
+    link: "https://taskidio.vercel.app/",
     placeholderBg: "#fff7ed",
     placeholderStroke: "#FF6C37",
     placeholderIcon: (
@@ -80,15 +82,16 @@ const projects: Project[] = [
         <polyline points="9 22 9 12 15 12 15 22" />
       </svg>
     ),
+    image:'/images/taskidio.PNG',
   },
   {
-    name: "Project Delta",
-    tag: "Platform",
+    name: "Techlo-Electronics",
+    tag: "E-commerce",
     description:
-      "A streaming platform with user authentication, content categorisation, and a responsive video player built for low-bandwidth environments.",
+      "An e-commerce platform for buying and selling electronics, featuring product listings, shopping cart, and secure checkout.",
     stack: ["React", "Node.js", "MongoDB", "Tailwind"],
     year: "2023",
-    link: "#",
+    link: "https://techlo-electronics.vercel.app/",
     placeholderBg: "#fdf4ff",
     placeholderStroke: "#a855f7",
     placeholderIcon: (
@@ -101,6 +104,29 @@ const projects: Project[] = [
         <rect x="1" y="5" width="15" height="14" rx="2" />
       </svg>
     ),
+    image:'/images/techlo.PNG',
+  },
+  {
+    name: "Church Management System",
+    tag: "Management System",
+    description:
+      "A management system for churches to handle member records, event planning, and communication.",
+    stack: ["React", "Node.js", "MongoDB", "Tailwind"],
+    year: "2025",
+    link: "https://arkpalacechapel.vercel.app/",
+    placeholderBg: "#fdf4ff",
+    placeholderStroke: "#a855f7",
+    placeholderIcon: (
+      <svg
+        width="80" height="80" viewBox="0 0 24 24"
+        fill="none" stroke="#a855f7"
+        strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"
+      >
+        <polygon points="23 7 16 12 23 17 23 7" />
+        <rect x="1" y="5" width="15" height="14" rx="2" />
+      </svg>
+    ),
+    image:'/images/arkpalace.PNG',
   },
 ];
 
