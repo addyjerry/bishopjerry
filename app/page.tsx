@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import HeroSection from "@/components/HeroSection";
 import ProcessStepper from "@/components/ProcessStepper";
 import Projects from "@/components/Projects";
@@ -11,6 +12,7 @@ export default function Home() {
       <TechStack/>
       <ProcessStepper/>
       <Projects/>
+      <Contact/>
     </main>
   );
 }
