@@ -1,6 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import React from "react";
+
+import { FaFigma,  FaGithub,   } from "react-icons/fa";
+import { GiCooler } from "react-icons/gi";
+import {  IoLogoVercel } from "react-icons/io5";
+import { RiTailwindCssFill } from "react-icons/ri";
+import {  SiFrontendmentor, SiGooglefonts, SiMongodb,  SiPostman, SiRender, SiShadcnui } from "react-icons/si";
+import { TbBook, TbBrandNextjs } from "react-icons/tb";
+import { VscVscode } from "react-icons/vsc";
+import { LuFramer } from "react-icons/lu";
 
 type Resource = {
   name: string;
@@ -8,13 +18,13 @@ type Resource = {
   href: string;
   tag: string;
   iconBg: string;
-  icon: string;
+  icon: React.ReactNode;
 };
 
 type Category = {
   title: string;
   iconBg: string;
-  icon: string;
+  icon: React.ReactNode;
   resources: Resource[];
 };
 
@@ -30,7 +40,7 @@ const categories: Category[] = [
         href: "https://code.visualstudio.com",
         tag: "Editor",
         iconBg: "#e8f4fd",
-        icon: "💻",
+        icon: <VscVscode color="#007ACC"/>,
       },
       {
         name: "GitHub",
@@ -38,7 +48,7 @@ const categories: Category[] = [
         href: "https://github.com",
         tag: "Version Control",
         iconBg: "#f0f0f0",
-        icon: "🐙",
+        icon: <FaGithub color="#333" />,
       },
       {
         name: "Postman",
@@ -46,7 +56,7 @@ const categories: Category[] = [
         href: "https://www.postman.com",
         tag: "API Testing",
         iconBg: "#fff3ee",
-        icon: "📮",
+        icon: <SiPostman color="#F24E1E" />,
       },
       {
         name: "Vercel",
@@ -54,7 +64,7 @@ const categories: Category[] = [
         href: "https://vercel.com",
         tag: "Deployment",
         iconBg: "#f0f0f0",
-        icon: "▲",
+        icon: <IoLogoVercel />,
       },
       {
         name: "MongoDB Atlas",
@@ -62,7 +72,7 @@ const categories: Category[] = [
         href: "https://www.mongodb.com/atlas",
         tag: "Database",
         iconBg: "#f0fdf4",
-        icon: "🍃",
+        icon: <SiMongodb color="#4DB33D"/>,
       },
       {
         name: "Render",
@@ -70,7 +80,7 @@ const categories: Category[] = [
         href: "https://render.com",
         tag: "Hosting",
         iconBg: "#eef4ff",
-        icon: "☁️",
+        icon: <SiRender />,
       },
     ],
   },
@@ -85,7 +95,7 @@ const categories: Category[] = [
         href: "https://figma.com",
         tag: "UI Design",
         iconBg: "#fdf4ff",
-        icon: "🖌️",
+        icon: <FaFigma color="#F24E1E"/>,
       },
       {
         name: "Shadcn UI",
@@ -93,7 +103,7 @@ const categories: Category[] = [
         href: "https://ui.shadcn.com",
         tag: "Component Library",
         iconBg: "#f5f5f5",
-        icon: "🧩",
+        icon: <SiShadcnui />,
       },
       {
         name: "Coolors",
@@ -101,7 +111,7 @@ const categories: Category[] = [
         href: "https://coolors.co",
         tag: "Colours",
         iconBg: "#fff0f0",
-        icon: "🎨",
+        icon: <GiCooler />,
       },
       {
         name: "Google Fonts",
@@ -109,7 +119,7 @@ const categories: Category[] = [
         href: "https://fonts.google.com",
         tag: "Typography",
         iconBg: "#fef9ee",
-        icon: "🔤",
+        icon: <SiGooglefonts />,
       },
     ],
   },
@@ -124,7 +134,7 @@ const categories: Category[] = [
         href: "https://nextjs.org/docs",
         tag: "Documentation",
         iconBg: "#f0f0f0",
-        icon: "📄",
+        icon: <TbBrandNextjs />,
       },
       {
         name: "Tailwind Docs",
@@ -132,7 +142,7 @@ const categories: Category[] = [
         href: "https://tailwindcss.com/docs",
         tag: "Documentation",
         iconBg: "#f0f9ff",
-        icon: "🌊",
+        icon: <RiTailwindCssFill />,
       },
       {
         name: "MDN Web Docs",
@@ -140,7 +150,7 @@ const categories: Category[] = [
         href: "https://developer.mozilla.org",
         tag: "Reference",
         iconBg: "#fff7f0",
-        icon: "📚",
+        icon: <TbBook />
       },
       {
         name: "Frontend Roadmap",
@@ -148,7 +158,7 @@ const categories: Category[] = [
         href: "https://roadmap.sh/frontend",
         tag: "Learning",
         iconBg: "#fff0f0",
-        icon: "🗺️",
+        icon: <SiFrontendmentor />,
       },
       {
         name: "Framer Motion",
@@ -156,7 +166,7 @@ const categories: Category[] = [
         href: "https://www.framer.com/motion",
         tag: "Animation",
         iconBg: "#f5f0ff",
-        icon: "✨",
+        icon: <LuFramer />,
       },
     ],
   },
