@@ -256,7 +256,7 @@ export default function HeroSection() {
         })}
 
         {/* Center content */}
-        <div className="relative z-20 text-center max-w-[560px]">
+        <div className="relative z-20 text-center max-w-[600px]">
           <span
             className="inline-block border border-gray-300 rounded-full px-4 py-1 text-xs text-gray-500 mb-6 bg-[#f0ede8]"
             style={{ fontFamily: "'DM Sans', sans-serif" }}
