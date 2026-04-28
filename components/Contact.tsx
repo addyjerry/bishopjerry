@@ -134,7 +134,7 @@ export default function Contact() {
               className="text-[14px] font-medium text-[#ff6b6b] no-underline border-b border-transparent hover:border-[#ff6b6b] transition-colors duration-200"
               style={{ fontFamily: "'DM Sans', sans-serif" }}
             >
-              bishopjerry@example.com
+              addyjerry2704@gmail.com
             </a>
           </div>
 
